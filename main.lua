@@ -262,7 +262,7 @@ function love.update(dt)
         -- if yes, target_vel shall be reduced. This needs to be a value of 1 or higher, otherwise the body will
         -- revolve around the target indefinitely (because it will overshoot the target every time unattenuated).
         -- the higher the number, the earlier the body will decelerate before reaching the target point.
-        -- low values will produce a slow convergence to the target point and have higher overshooting.
+        -- Low values will produce more oscillation around the target point before converging.
         local num_frames_foresight = 3
 
         -- get the center of mass of the body and calculate the distance to the target point
